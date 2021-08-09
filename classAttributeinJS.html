@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class attribute and JavaScript</title>
+</head>
+<body>
+    <h1>Class attribute and JavaScript</h1>
+    
+    <div style="text-align: center;">
+        <p>Click below button to see the changes</p>
+        <button onclick="Myfunction()">click me to hide city</button>
+        <h3 class="city">Mysure</h3>
+        <p>One most Sankritik Nagari in Karnataka</p>
+
+        <h3 class="city">Bangalore</h3>
+        <p>One of metro cities in India</p>
+
+        <h3 class="city">Davanagere</h3>
+        <p>Manchester city of Karnataka</p>
+    </div>
+
+    <iframe src="https://www.axismf.com/mutual-funds/equity-funds/axis-bluechip-fund/ef-gp/direct?utm_source=DV360&utm_medium=Display&utm_campaign=Axis_Bank_Mutual_Fund&utm_term=Online_Visits&utm_content=In_Market&dclid=&gclid=CjwKCAjwgb6IBhAREiwAgMYKRtWrzbN3yx4Ol_4DpM-JtYXjrmniZ_ZnnzEhvMsGRfOAS-558vVLnxoCd7IQAvD_BwE" title="Axis_Bank website" name="for_iFrame" frameborder="0"
+    style="height: 300px; width: 600px;"></iframe>
+    <br><br>
+
+    <p style="margin-left :300px;">
+        <a href="https://en.wikipedia.org/wiki/Axis_Bank" target="for_iFrame">wanna go to its wikipedia</a>
+    </p>
+    
+</body>
+<script>
+    function Myfunction(){
+        let x=document.getElementsByClassName("city");
+        for(let i=0;i<x.length;i++){
+            x[i].style.display="none";
+        }
+    }
+</script>
+</html>
