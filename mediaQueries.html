@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Media query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size:  30px;
+        }
+
+        .left {
+            background-color: orange;
+            float: left;
+            width: 20%;
+            padding: 20px;
+
+        }
+
+        .main {
+            background-color: white;
+            float: left;
+            width: 60%;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .right {
+            background-color: green;
+            float: left;
+            width: 20%;
+            padding: 20px;
+        }
+
+        @media screen and (max-width:800px) {
+            .left,.main,.right {
+                width: 100%;
+            }
+        }
+        div{
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <p>Left side</p>
+    </div>
+    <div class="main">
+        <p>Middle part</p>
+    </div>
+    <div class="right">
+        <p>Right side
+        </p>
+    </div>
+</body>
+
+</html>
