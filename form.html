@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+
+<body>
+    <h1>Illustation of Form elements in html</h1>
+
+    <form action="">
+        <label for="fo">Enter your first Name :</label>
+        <input type="text" id="forfName" value="First Name">
+        <h3>select or drop down list</h3>
+        <label for="cars">Select any of these cars</label>
+        <select name="carList" id="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+            <option value="maruti">Maruti 800</option>
+            <option value="tata">Indica</option>
+        </select>
+        <br><br>
+        <textarea name="" id="" cols="30" rows="10">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque modi minima provident cupiditate dolorem quia excepturi quis labore eum est.
+        </textarea>
+        
+        <br><br>
+        <h3>button element in html</h3>
+        <br>
+        <button type="button" onClick="alert('Hello World!!')">Button</button>
+        <br><br>
+
+        <h2>The datalist Element</h2>
+        <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+        <input list="browsers" name="ListBrowsers">
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="FireFox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+<br><br>
+        <h2>Raida butons</h2>
+        <input type="radio" id="male" value="male" name="sex">
+        <label for="male" >Male</label> <br>
+        <input type="radio" id="female" value="female" name="sex">
+        <label for="female">Female</label>
+
+
+
+
+        <p>
+            <input type="Submit" style="margin-left: 1000px;background-color: grey;">
+        </p>
+
+
+    </form>
+
+
+</body>
+
+</html>
