@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on and off by javascript</title>
+</head>
+<body>
+    <img id="bulbId"src="./bulb_on.jpg" alt="place for bulb image" width="400px" height="300px">
+    <p>
+        <button onClick="myfunction(1)">Button ON</button>
+        <button onClick="myfunction(0)">Button OFF</button>
+    </p>            
+    
+    <script>
+        function myfunction(pass){
+            let temp;
+            if(pass==0)
+            temp='bulb_off.jpg';
+            else
+            temp='bulb_on.jpg';
+            document.getElementById("bulbId").src=temp;
+        }
+
+    </script>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<img src="./latest.jpg" alt="My photo" style="max-width: 200%;height: auto;">
+
+</body>
+</html>
